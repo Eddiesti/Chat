@@ -5,7 +5,7 @@ VisualStudioVersion = 16.0.28803.202
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Chat", "Chat\Chat.csproj", "{1134D7BC-C417-40AA-9624-0FE52343D529}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChatDesctop", "ChatDesctop\ChatDesctop.csproj", "{2A30840D-D7C8-4EFA-99F3-F9BA30857910}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ChatDesctop", "ChatDesctop\ChatDesctop.csproj", "{2A30840D-D7C8-4EFA-99F3-F9BA30857910}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

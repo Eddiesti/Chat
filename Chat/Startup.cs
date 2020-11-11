@@ -25,7 +25,7 @@ namespace Chat
 
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddControllers(); 
+            services.AddControllers();
 
 
             services.AddDbContext<ChatDbContext>(options => options.UseSqlServer(Configuration.GetConnectionString("ConnStr")));
