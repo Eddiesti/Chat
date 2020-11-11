@@ -1,0 +1,35 @@
+﻿<Window
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" mc:Ignorable="d" x:Class="ChatDesctop.MainWindow"
+        Title="MainWindow" Height="221.334" WindowStartupLocation="CenterScreen" Width="233.333" ResizeMode="NoResize" WindowStyle="None" MouseLeftButtonDown="Window_MouseLeftButtonDown">
+
+    <Grid Height="224" x:Name="grid1" Width="230">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="33*" />
+            <RowDefinition Height="28*" />
+            <RowDefinition Height="32*" />
+            <RowDefinition Height="28*" />
+            <RowDefinition Height="52*" />
+            <RowDefinition Height="54*" />
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="38*" />
+            <ColumnDefinition Width="63*" />
+            <ColumnDefinition Width="99*"/>
+            <ColumnDefinition Width="30*" />
+        </Grid.ColumnDefinitions>
+        <Button Content="X" Grid.Column="3" Height="23" HorizontalAlignment="Right" x:Name="buttonClose" VerticalAlignment="Top" Width="24" BorderBrush="White" Background="Red" Foreground="White" BorderThickness="0" FontWeight="Bold" Click="buttonClose_Click" />
+        <TextBlock Margin="14,0,0,0" x:Name="textBlockLogin" Text="Логин" Grid.Column="1" FontSize="14" HorizontalAlignment="Left" FontWeight="Bold" Height="21" VerticalAlignment="Bottom" />
+        <TextBox Grid.Column="1" Grid.Row="1" HorizontalAlignment="Left" x:Name="textBoxLogin" VerticalAlignment="Center" Width="141" Margin="0,4" MaxLines="16" Grid.ColumnSpan="2" />
+        <TextBlock Margin="14,12,0,0" x:Name="textBlockPass" Text="Пароль" Grid.Column="1" Grid.Row="2" FontSize="14" HorizontalAlignment="Left" FontWeight="Bold" Grid.ColumnSpan="2" />
+        <PasswordBox Grid.Column="1" Grid.Row="3"  MaxLength="16" HorizontalAlignment="Left" x:Name="passwordBoxPass" VerticalAlignment="Center" Width="141" Margin="0,5" Grid.ColumnSpan="2" />
+        <Button Click="buttonEnter_Click" Grid.Column="1" Grid.Row="4" Height="44" HorizontalAlignment="Center" x:Name="buttonEnter" VerticalAlignment="Center" Width="120" FontSize="18" FontWeight="Bold" IsDefault="True" Grid.ColumnSpan="2" Margin="21,3">
+            <StackPanel Orientation="Horizontal">
+             
+                <TextBlock Text="Войти" />
+            </StackPanel>
+        </Button>
+        <Button Click="ButtonRegClick"  Content="Регистрация" Grid.Column="1" Grid.Row="5" Height="23" x:Name="buttonRegistration" VerticalAlignment="Center" Foreground="Gray" Grid.ColumnSpan="2" Margin="21,6,0,24" HorizontalAlignment="Left" Width="76" />
+    </Grid>
+</Window>
